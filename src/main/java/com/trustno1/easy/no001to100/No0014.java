@@ -20,13 +20,18 @@ import java.util.Arrays;
 public class No0014 {
 
     public static void main( String[] args ) {
-        String[] strings1 = new String[]{"flower","flow","","flight","flowers"};
+        String[] strings1 = new String[]{"flower","flow","flight","flowers"};
         String[] strings2 = new String[]{"baab","bacb","b","cbc"};
         String[] strings3 = new String[]{"dog","racecar","car"};
+        String[] strings4 = new String[]{"bird"};
+        String[] strings5 = new String[]{};
 
         System.out.println("input : " + Arrays.toString(strings1) + " , output : " + longestCommonPrefix(strings1));
         System.out.println("input : " + Arrays.toString(strings2) + " , output : " + longestCommonPrefix(strings2));
         System.out.println("input : " + Arrays.toString(strings3) + " , output : " + longestCommonPrefix(strings3));
+        System.out.println("input : " + Arrays.toString(strings4) + " , output : " + longestCommonPrefix(strings4));
+        System.out.println("input : " + Arrays.toString(strings5) + " , output : " + longestCommonPrefix(strings5));
+
     }
 
     private static String longestCommonPrefix(String[] strs) {
