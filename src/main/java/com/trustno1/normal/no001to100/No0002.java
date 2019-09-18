@@ -1,4 +1,4 @@
-package com.trustno1.easy.no001to100;
+package com.trustno1.normal.no001to100;
 
 import java.util.ArrayList;
 import java.util.Arrays;
