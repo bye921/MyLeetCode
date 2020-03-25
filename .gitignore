@@ -1,16 +1,86 @@
 HELP.md
 target/
-### STS ###
-.apt_generated
-.classpath
-.factorypath
-.project
-.settings
-.springBeans
-.sts4-cache
 
-### IntelliJ IDEA ###
+## Java project
+
+# Java
+*.class
+*.jar
+*.war
+*.ear
+*.log.[0-9]
+*.log.[0-9].current
+*.jfr
+
+# Build System
+bin/
+build/
+dest/
+out/
+
+# Eclipse
+*~.nib
+.metadata
+.classpath
+.apt_generated
+.factorypath
+.springBeans
+.recommenders/
+RemoteSystemsTempFiles
+tmp/
+local.properties
+# Maven
+target
+
+# H2 database
+*.db
+
+## Environment
+
+# Common
+*.log
+*.patch
+*.tmp
+log/
+logs/
+src/META-INF
+
+# OS
+Thumbs.db
+.DS_Store
+
+# Archives
+*.7z
+*.bz2
+*.gz
+*.tar
+*.xz
+*.zip
+
+# Editor (Eclipse)
+.settings/
+
+# Editor (Emacs)
+*~
+\#*\#
+/.emacs.desktop
+/.emacs.desktop.lock
+auto-save-list
+tramp
+.\#*
+*.elc
+
+# Editor (IntelliJ IDEA)
 .idea
-*.iws
 *.iml
 *.ipr
+*.iws
+
+# Editor (Vim, Other)
+*.bak
+*.swp
+
+# Editor (Visual Studio, Visual Studio Code)
+.sln
+.suo
+.vscode
