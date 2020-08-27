@@ -23,6 +23,7 @@ public class No0002 extends topic {
     List<Integer> l2 = Arrays.asList(5, 6, 4);
 
 //    System.out.println(addTwoNumbers(l1, l2).toString());
+    System.out.println("======================="  + getClass().getName() + "===================================");
   }
 
   private ListNode addTwoNumbers(ListNode l1, ListNode l2) {

@@ -36,6 +36,7 @@ public class No0001 extends topic {
     callAndPrint(numbers3, target3);
     callAndPrint(numbers4, target4);
     callAndPrint(numbers5, target5);
+    System.out.println("======================="  + getClass().getName() + "===================================");
   }
 
   private int[] twoSum(int[] numbers, int target) {

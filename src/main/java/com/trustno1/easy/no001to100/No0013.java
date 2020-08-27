@@ -62,6 +62,7 @@ public class No0013 extends topic {
     System.out.println("input : " + str3 + " expect : 9, output : " + romanToInt(str3));
     System.out.println("input : " + str4 + " expect : 58, output : " + romanToInt(str4));
     System.out.println("input : " + str5 + " expect : 1994, output : " + romanToInt(str5));
+    System.out.println("======================="  + getClass().getName() + "===================================");
   }
 
   private int romanToInt(String s) {

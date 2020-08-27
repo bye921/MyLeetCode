@@ -61,6 +61,7 @@ public class No0020 extends topic {
     System.out.println("input : " + strings8 + " , output : " + isValidStack(strings8));
     System.out.println("input : " + strings9 + " , output : " + isValidStack(strings9));
     System.out.println("input : " + strings10 + " , output : " + isValidStack(strings10));
+    System.out.println("======================="  + getClass().getName() + "===================================");
   }
 
   private boolean isValid(String s) {

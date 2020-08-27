@@ -27,6 +27,7 @@ public class No0026 extends topic {
 
     System.out.println("input: " + Arrays.toString(numbers1) + ", Output length is " + removeDuplicates(numbers1));
     System.out.println("input: " + Arrays.toString(numbers2) + ", Output length is " + removeDuplicates(numbers2));
+    System.out.println("======================="  + getClass().getName() + "===================================");
   }
 
   private int removeDuplicates(int[] numbers) {

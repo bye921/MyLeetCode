@@ -47,6 +47,7 @@ public class No0028 extends topic {
     System.out.println("haystack: " + haystack6 + ", needle: " + needle6 + ", output: " + strStr(haystack6, needle6));
     System.out.println("haystack: " + haystack7 + ", needle: " + needle7 + ", output: " + strStr(haystack7, needle7));
     System.out.println("haystack: " + haystack8 + ", needle: " + needle8 + ", output: " + strStr(haystack8, needle8));
+    System.out.println("======================="  + getClass().getName() + "===================================");
   }
 
   /**

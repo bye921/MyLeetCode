@@ -28,7 +28,7 @@ public class No0035 extends topic {
 
   @Override
   public void start() {
-
+    System.out.println("======================="  + getClass().getName() + "===================================");
   }
 
   private int searchInsert(Vector<Integer> nums, int target) {

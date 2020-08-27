@@ -34,6 +34,7 @@ public class No0014 extends topic {
     System.out.println("input : " + Arrays.toString(strings3) + " , output : " + longestCommonPrefix(strings3));
     System.out.println("input : " + Arrays.toString(strings4) + " , output : " + longestCommonPrefix(strings4));
     System.out.println("input : " + Arrays.toString(strings5) + " , output : " + longestCommonPrefix(strings5));
+    System.out.println("======================="  + getClass().getName() + "===================================");
   }
 
   private String longestCommonPrefix(String[] strs) {

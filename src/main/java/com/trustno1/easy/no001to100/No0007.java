@@ -32,6 +32,7 @@ public class No0007 extends topic {
     System.out.println("input : " + int7 + " , output : " + reverseInteger2(int7));
     System.out.println("input : " + int8 + " , output : " + reverseInteger2(int8));
     System.out.println("input : " + int9 + " , output : " + reverseInteger2(int9));
+    System.out.println("======================="  + getClass().getName() + "===================================");
   }
 
   private int reverseInteger(int number) {

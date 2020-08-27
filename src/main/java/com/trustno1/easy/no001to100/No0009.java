@@ -36,6 +36,7 @@ public class No0009 extends topic {
     System.out.println("input : " + int4 + " , output : " + isPalindrome2(int4));
     System.out.println("input : " + int5 + " , output : " + isPalindrome2(int5));
     System.out.println("input : " + int6 + " , output : " + isPalindrome2(int6));
+    System.out.println("======================="  + getClass().getName() + "===================================");
   }
 
   private boolean isPalindrome(int x) {

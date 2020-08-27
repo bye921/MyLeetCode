@@ -33,6 +33,8 @@ public class No0021 extends topic {
       l = l.next;
     }
     System.out.print(l.val);
+    System.out.println();
+    System.out.println("======================="  + getClass().getName() + "===================================");
   }
 
   private ListNode mergeTwoLists(ListNode l1, ListNode l2) {

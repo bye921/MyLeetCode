@@ -31,6 +31,7 @@ public class No0027 extends topic {
 
     System.out.println("input: " + Arrays.toString(numbers1) + ", output length is " + removeElement(numbers1, val1));
     System.out.println("input: " + Arrays.toString(numbers2) + ", output length is " + removeElement(numbers2, val2));
+    System.out.println("======================="  + getClass().getName() + "===================================");
   }
 
   private int removeElement(int[] numbers, int val) {
