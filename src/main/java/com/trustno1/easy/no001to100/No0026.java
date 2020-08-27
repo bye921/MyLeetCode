@@ -18,24 +18,26 @@ import java.util.Arrays;
  */
 public class No0026 {
 
-    public static void main( String[] args ) {
-        int[] numbers1 = new int[]{1,1,2};
-        int[] numbers2 = new int[]{0,0,1,1,1,2,2,3,3,4};
+  public static void main(String[] args) {
+    int[] numbers1 = new int[] {1, 1, 2};
+    int[] numbers2 = new int[] {0, 0, 1, 1, 1, 2, 2, 3, 3, 4};
 
-        System.out.println("input: " + Arrays.toString(numbers1) + ", Output length is " + removeDuplicates(numbers1));
-        System.out.println("input: " + Arrays.toString(numbers2) + ", Output length is " + removeDuplicates(numbers2));
-    }
+    System.out.println("input: " + Arrays.toString(numbers1) + ", Output length is " + removeDuplicates(numbers1));
+    System.out.println("input: " + Arrays.toString(numbers2) + ", Output length is " + removeDuplicates(numbers2));
+  }
 
-    private static int removeDuplicates(int[] numbers) {
-        if (numbers == null || numbers.length == 0) return 0;
-        if (numbers.length == 1) return 1;
-        int count = 0;
-        for (int i = 1; i < numbers.length; i++) {
-            if (numbers[count] != numbers[i]) {
-                count++;
-                numbers[count] = numbers[i];
-            }
-        }
-        return count + 1;
+  private static int removeDuplicates(int[] numbers) {
+    if (numbers == null || numbers.length == 0)
+      return 0;
+    if (numbers.length == 1)
+      return 1;
+    int count = 0;
+    for (int i = 1; i < numbers.length; i++) {
+      if (numbers[count] != numbers[i]) {
+        count++;
+        numbers[count] = numbers[i];
+      }
     }
+    return count + 1;
+  }
 }

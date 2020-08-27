@@ -19,44 +19,49 @@ package com.trustno1.easy.no001to100;
  */
 public class No0009 {
 
-    public static void main( String[] args ) {
-        int int1 = 1;
-        int int2 = 121;
-        int int3 = -121;
-        int int4 = 10;
-        int int5 = 1561;
-        int int6 = 5335;
+  public static void main(String[] args) {
+    int int1 = 1;
+    int int2 = 121;
+    int int3 = -121;
+    int int4 = 10;
+    int int5 = 1561;
+    int int6 = 5335;
 
-        System.out.println("input : " + int1 + " , output : " + isPalindrome2(int1));
-        System.out.println("input : " + int2 + " , output : " + isPalindrome2(int2));
-        System.out.println("input : " + int3 + " , output : " + isPalindrome2(int3));
-        System.out.println("input : " + int4 + " , output : " + isPalindrome2(int4));
-        System.out.println("input : " + int5 + " , output : " + isPalindrome2(int5));
-        System.out.println("input : " + int6 + " , output : " + isPalindrome2(int6));
-    }
+    System.out.println("input : " + int1 + " , output : " + isPalindrome2(int1));
+    System.out.println("input : " + int2 + " , output : " + isPalindrome2(int2));
+    System.out.println("input : " + int3 + " , output : " + isPalindrome2(int3));
+    System.out.println("input : " + int4 + " , output : " + isPalindrome2(int4));
+    System.out.println("input : " + int5 + " , output : " + isPalindrome2(int5));
+    System.out.println("input : " + int6 + " , output : " + isPalindrome2(int6));
+  }
 
-    private static boolean isPalindrome(int x) {
-        if (x < 0) return false;
-        if (x < 10) return true;
-        char chars[] = String.valueOf(x).toCharArray();
-        for (int start = 0, end = chars.length - 1; start < end ; start++, end--) {
-            if (chars[start] != chars[end]) {
-                return false;
-            }
-        }
-        return true;
+  private static boolean isPalindrome(int x) {
+    if (x < 0)
+      return false;
+    if (x < 10)
+      return true;
+    char[] chars = String.valueOf(x).toCharArray();
+    for (int start = 0, end = chars.length - 1; start < end; start++, end--) {
+      if (chars[start] != chars[end]) {
+        return false;
+      }
     }
+    return true;
+  }
 
-    private static boolean isPalindrome2(int x) {
-        if (x < 0) return false;
-        if (x < 10) return true;
-        if (x % 10 == 0) return false;
-        int a = x;
-        int t = 0;
-        while (x > 0) {
-            t = t * 10 + x % 10;
-            x /= 10;
-        }
-        return t == a;
+  private static boolean isPalindrome2(int x) {
+    if (x < 0)
+      return false;
+    if (x < 10)
+      return true;
+    if (x % 10 == 0)
+      return false;
+    int a = x;
+    int t = 0;
+    while (x > 0) {
+      t = t * 10 + x % 10;
+      x /= 10;
     }
+    return t == a;
+  }
 }

@@ -17,24 +17,25 @@ import java.util.List;
  */
 public class No0002 {
 
-    public static void main( String[] args ) {
+  public static void main(String[] args) {
 
-        List<Integer> l1 = Arrays.asList(2, 4, 3);
-        List<Integer> l2 = Arrays.asList(5, 6, 4);
+    List<Integer> l1 = Arrays.asList(2, 4, 3);
+    List<Integer> l2 = Arrays.asList(5, 6, 4);
 
-        //System.out.println(addTwoNumbers(l1, l2).toString());
-    }
+    // System.out.println(addTwoNumbers(l1, l2).toString());
+  }
 
-    private static ListNode addTwoNumbers(ListNode l1, ListNode l2) {
-        ListNode listNode = new ListNode(1);
+  private static ListNode addTwoNumbers(ListNode l1, ListNode l2) {
+    ListNode listNode = new ListNode(1);
 
-        return listNode;
-    }
+    return listNode;
+  }
 
-    // Definition for singly-linked list.
-    private static class ListNode {
-        int val;
-        ListNode next;
-        ListNode(int x) { val = x; }
-    }
+  // Definition for singly-linked list.
+  private static class ListNode {
+    int val;
+    ListNode next;
+
+    ListNode(int x) { val = x; }
+  }
 }
