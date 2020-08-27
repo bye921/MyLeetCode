@@ -1,5 +1,7 @@
 package com.trustno1.easy.no001to100;
 
+import com.trustno1.appStart.base.topic;
+
 import java.util.Arrays;
 
 /**
@@ -18,9 +20,10 @@ import java.util.Arrays;
  * 注意这五个元素可为任意顺序。
  * 你不需要考虑数组中超出新长度后面的元素。
  */
-public class No0027 {
+public class No0027 extends topic {
 
-  public static void main(String[] args) {
+  @Override
+  public void start() {
     int[] numbers1 = new int[] {3, 2, 2, 3};
     int val1 = 3;
     int[] numbers2 = new int[] {0, 1, 2, 2, 3, 0, 4, 2};
@@ -30,7 +33,7 @@ public class No0027 {
     System.out.println("input: " + Arrays.toString(numbers2) + ", output length is " + removeElement(numbers2, val2));
   }
 
-  private static int removeElement(int[] numbers, int val) {
+  private int removeElement(int[] numbers, int val) {
     if (numbers == null || numbers.length == 0)
       return 0;
     if (numbers.length == 1)

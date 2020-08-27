@@ -1,5 +1,7 @@
 package com.trustno1.easy.no001to100;
 
+import com.trustno1.appStart.base.topic;
+
 /**
  * 给出一个 32 位的有符号整数，你需要将这个整数中每位上的数字进行反转。
  *
@@ -7,9 +9,10 @@ package com.trustno1.easy.no001to100;
  * 输入: 123
  * 输出: 321
  */
-public class No0007 {
+public class No0007 extends topic {
 
-  public static void main(String[] args) {
+  @Override
+  public void start() {
     int int1 = 123;
     int int2 = -123;
     int int3 = 120;
@@ -31,7 +34,7 @@ public class No0007 {
     System.out.println("input : " + int9 + " , output : " + reverseInteger2(int9));
   }
 
-  private static int reverseInteger(int number) {
+  private int reverseInteger(int number) {
     if (number >= 0 && number < 10) {
       return number;
     } else {
@@ -51,7 +54,7 @@ public class No0007 {
     }
   }
 
-  private static int reverseInteger2(int x) {
+  private int reverseInteger2(int x) {
     int rev = 0;
     while (x != 0) {
       int pop = x % 10;

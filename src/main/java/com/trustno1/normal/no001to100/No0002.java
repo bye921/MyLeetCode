@@ -1,8 +1,8 @@
 package com.trustno1.normal.no001to100;
 
-import java.util.ArrayList;
+import com.trustno1.appStart.base.topic;
+
 import java.util.Arrays;
-import java.util.LinkedList;
 import java.util.List;
 
 /**
@@ -15,27 +15,24 @@ import java.util.List;
  * 输出：7 -> 0 -> 8
  * 原因：342 + 465 = 807
  */
-public class No0002 {
+public class No0002 extends topic {
 
-  public static void main(String[] args) {
-
+  @Override
+  public void start() {
     List<Integer> l1 = Arrays.asList(2, 4, 3);
     List<Integer> l2 = Arrays.asList(5, 6, 4);
 
-    // System.out.println(addTwoNumbers(l1, l2).toString());
+//    System.out.println(addTwoNumbers(l1, l2).toString());
   }
 
-  private static ListNode addTwoNumbers(ListNode l1, ListNode l2) {
-    ListNode listNode = new ListNode(1);
-
-    return listNode;
+  private ListNode addTwoNumbers(ListNode l1, ListNode l2) {
+    return new ListNode(1);
   }
 
   // Definition for singly-linked list.
   private static class ListNode {
     int val;
     ListNode next;
-
     ListNode(int x) { val = x; }
   }
 }

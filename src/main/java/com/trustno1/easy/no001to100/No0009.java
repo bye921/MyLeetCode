@@ -1,5 +1,7 @@
 package com.trustno1.easy.no001to100;
 
+import com.trustno1.appStart.base.topic;
+
 /**
  * 判断一个整数是否是回文数。回文数是指正序（从左向右）和倒序（从右向左）读都是一样的整数。
  *
@@ -17,9 +19,10 @@ package com.trustno1.easy.no001to100;
  * 输出: false
  * 解释: 从右向左读, 为 01 。因此它不是一个回文数。
  */
-public class No0009 {
+public class No0009 extends topic {
 
-  public static void main(String[] args) {
+  @Override
+  public void start() {
     int int1 = 1;
     int int2 = 121;
     int int3 = -121;
@@ -35,7 +38,7 @@ public class No0009 {
     System.out.println("input : " + int6 + " , output : " + isPalindrome2(int6));
   }
 
-  private static boolean isPalindrome(int x) {
+  private boolean isPalindrome(int x) {
     if (x < 0)
       return false;
     if (x < 10)
@@ -49,7 +52,7 @@ public class No0009 {
     return true;
   }
 
-  private static boolean isPalindrome2(int x) {
+  private boolean isPalindrome2(int x) {
     if (x < 0)
       return false;
     if (x < 10)

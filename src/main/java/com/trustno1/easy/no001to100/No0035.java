@@ -1,5 +1,7 @@
 package com.trustno1.easy.no001to100;
 
+import com.trustno1.appStart.base.topic;
+
 import java.util.Vector;
 
 /**
@@ -22,13 +24,14 @@ import java.util.Vector;
  * 输入: [1,3,5,6], 0
  * 输出: 0
  */
-public class No0035 {
+public class No0035 extends topic {
 
-  public static void main(String[] args) {
+  @Override
+  public void start() {
 
   }
 
-  private static int searchInsert(Vector<Integer> nums, int target) {
+  private int searchInsert(Vector<Integer> nums, int target) {
     return 0;
   }
 }

@@ -1,5 +1,7 @@
 package com.trustno1.easy.no001to100;
 
+import com.trustno1.appStart.base.topic;
+
 import java.util.Arrays;
 
 /**
@@ -16,9 +18,10 @@ import java.util.Arrays;
  * 函数应该返回新的长度 5, 并且原数组 nums 的前五个元素被修改为 0, 1, 2, 3, 4。
  * 你不需要考虑数组中超出新长度后面的元素。
  */
-public class No0026 {
+public class No0026 extends topic {
 
-  public static void main(String[] args) {
+  @Override
+  public void start() {
     int[] numbers1 = new int[] {1, 1, 2};
     int[] numbers2 = new int[] {0, 0, 1, 1, 1, 2, 2, 3, 3, 4};
 
@@ -26,7 +29,7 @@ public class No0026 {
     System.out.println("input: " + Arrays.toString(numbers2) + ", Output length is " + removeDuplicates(numbers2));
   }
 
-  private static int removeDuplicates(int[] numbers) {
+  private int removeDuplicates(int[] numbers) {
     if (numbers == null || numbers.length == 0)
       return 0;
     if (numbers.length == 1)

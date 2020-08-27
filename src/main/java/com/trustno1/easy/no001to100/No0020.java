@@ -1,5 +1,7 @@
 package com.trustno1.easy.no001to100;
 
+import com.trustno1.appStart.base.topic;
+
 import java.util.HashMap;
 import java.util.LinkedList;
 import java.util.Map;
@@ -33,9 +35,10 @@ import java.util.Stack;
  * 输出: true
  *
  */
-public class No0020 {
+public class No0020 extends topic {
 
-  public static void main(String[] args) {
+  @Override
+  public void start() {
     String strings1 = "[({(())}[()])]";
     String strings2 = "()[]{}";
     String strings3 = "(]";
@@ -60,7 +63,7 @@ public class No0020 {
     System.out.println("input : " + strings10 + " , output : " + isValidStack(strings10));
   }
 
-  private static boolean isValid(String s) {
+  private boolean isValid(String s) {
     if (s == null || s.isEmpty())
       return true;
     if (s.length() % 2 != 0)
@@ -169,10 +172,10 @@ public class No0020 {
       if (noMore1 && noMore2 && noMore3)
         return false;
     }
-    return list.isEmpty();
+    return true;
   }
 
-  private static boolean isValidStack(String s) {
+  private boolean isValidStack(String s) {
     if (s == null || s.isEmpty())
       return true;
     if (s.length() % 2 != 0)

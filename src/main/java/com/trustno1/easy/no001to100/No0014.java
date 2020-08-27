@@ -1,5 +1,7 @@
 package com.trustno1.easy.no001to100;
 
+import com.trustno1.appStart.base.topic;
+
 import java.util.Arrays;
 
 /**
@@ -17,9 +19,10 @@ import java.util.Arrays;
  * 说明:
  * 所有输入只包含小写字母 a-z 。
  */
-public class No0014 {
+public class No0014 extends topic {
 
-  public static void main(String[] args) {
+  @Override
+  public void start() {
     String[] strings1 = new String[] {"flower", "flow", "flight", "flowers"};
     String[] strings2 = new String[] {"baab", "bacb", "b", "cbc"};
     String[] strings3 = new String[] {"dog", "racecar", "car"};
@@ -31,10 +34,9 @@ public class No0014 {
     System.out.println("input : " + Arrays.toString(strings3) + " , output : " + longestCommonPrefix(strings3));
     System.out.println("input : " + Arrays.toString(strings4) + " , output : " + longestCommonPrefix(strings4));
     System.out.println("input : " + Arrays.toString(strings5) + " , output : " + longestCommonPrefix(strings5));
-
   }
 
-  private static String longestCommonPrefix(String[] strs) {
+  private String longestCommonPrefix(String[] strs) {
     if (strs.length == 0)
       return "";
     if (strs.length == 1)

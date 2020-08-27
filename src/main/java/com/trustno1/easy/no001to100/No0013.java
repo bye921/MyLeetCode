@@ -1,5 +1,7 @@
 package com.trustno1.easy.no001to100;
 
+import com.trustno1.appStart.base.topic;
+
 import java.util.HashMap;
 import java.util.Map;
 
@@ -45,9 +47,10 @@ import java.util.Map;
  * 输出: 1994
  * 解释: M = 1000, CM = 900, XC = 90, IV = 4.
  */
-public class No0013 {
+public class No0013 extends topic {
 
-  public static void main(String[] args) {
+  @Override
+  public void start() {
     String str1 = "III";
     String str2 = "IV";
     String str3 = "IX";
@@ -61,11 +64,11 @@ public class No0013 {
     System.out.println("input : " + str5 + " expect : 1994, output : " + romanToInt(str5));
   }
 
-  private static int romanToInt(String s) {
+  private int romanToInt(String s) {
     int number = 0;
     char[] chars = s.toCharArray();
     for (int i = 0; i < chars.length; i++) {
-      Boolean b = false;
+      boolean b = false;
       if (i < chars.length - 1) {
         switch (chars[i] + "" + chars[i + 1]) {
           case "IV":
@@ -129,7 +132,7 @@ public class No0013 {
     return number;
   }
 
-  private static int romanToInt_Map(String s) {
+  private int romanToInt_Map(String s) {
     int number = 0;
     Map<String, Integer> map = new HashMap<>();
     map.put("I", 1);
@@ -147,7 +150,7 @@ public class No0013 {
     map.put("CM", 900);
     char[] chars = s.toCharArray();
     for (int i = 0; i < chars.length; i++) {
-      Boolean b = false;
+      boolean b = false;
       if (i < chars.length - 1) {
         if (map.containsKey(chars[i] + "" + chars[i + 1])) {
           number += map.get(chars[i] + "" + chars[i + 1]);
