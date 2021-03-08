@@ -1,9 +1,10 @@
 package com.trustno1.test;
 
-import com.trustno1.appStart.base.topic;
 import org.apache.commons.lang3.math.NumberUtils;
 
-public class Test2 extends topic {
+import com.trustno1.appStart.base.topic;
+
+public class NumberUtilsTest extends topic {
 
   @Override
   public void start() {

@@ -14,6 +14,8 @@ import java.util.Map;
  * 给定 nums = [2, 7, 11, 15], target = 9
  * 因为 nums[0] + nums[1] = 2 + 7 = 9
  * 所以返回 [0, 1]
+ * @author xzheng
+ *
  */
 public class No0001 extends topic {
 
@@ -50,7 +52,7 @@ public class No0001 extends topic {
     return new int[2];
   }
 
-  private int[] twoSum_Hash(int[] numbers, int target) {
+  private int[] twoSumHash(int[] numbers, int target) {
     Map<Integer, Integer> map = new HashMap<>();
     for (int i = 0; i < numbers.length; i++) {
       int x = target - numbers[i];
@@ -66,7 +68,7 @@ public class No0001 extends topic {
     System.out.println("numbers: " + Arrays.toString(numbers) + " target: " + target);
     int[] output = twoSum(numbers, target);
     System.out.println("solution1: " + Arrays.toString(output));
-    int[] output2 = twoSum_Hash(numbers, target);
+    int[] output2 = twoSumHash(numbers, target);
     System.out.println("solution2: " + Arrays.toString(output2));
   }
 }

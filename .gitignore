@@ -29,8 +29,15 @@ out/
 RemoteSystemsTempFiles
 tmp/
 local.properties
+
 # Maven
 target
+
+# Gradle
+.gradle
+gradle-app.setting
+!gradle-wrapper.jar
+.project
 
 # H2 database
 *.db

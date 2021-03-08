@@ -1,16 +1,7 @@
 package com.trustno1.appStart;
 
-import com.trustno1.easy.no001to100.No0001;
-import com.trustno1.easy.no001to100.No0007;
-import com.trustno1.easy.no001to100.No0009;
-import com.trustno1.easy.no001to100.No0013;
-import com.trustno1.easy.no001to100.No0014;
-import com.trustno1.easy.no001to100.No0020;
-import com.trustno1.easy.no001to100.No0021;
-import com.trustno1.easy.no001to100.No0026;
-import com.trustno1.easy.no001to100.No0027;
-import com.trustno1.easy.no001to100.No0028;
-import com.trustno1.normal.no001to100.No0002;
+import com.trustno1.easy.no001to100.*;
+import com.trustno1.normal.no001to100.*;
 
 public class codeStartApplication {
 

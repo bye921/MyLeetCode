@@ -8,6 +8,8 @@ import com.trustno1.appStart.base.topic;
  * 示例：
  * 输入: 123
  * 输出: 321
+ * @author xzheng
+ *
  */
 public class No0007 extends topic {
 
