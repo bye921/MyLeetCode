@@ -3,9 +3,9 @@ package com.trustno1.easy.no001to100;
 import com.trustno1.appStart.base.topic;
 
 /**
- * 实现 strStr() 函数。
- * 给定一个 haystack 字符串和一个 needle 字符串，在 haystack 字符串中找出 needle 字符串出现的第一个位置 (从0开始)。如果不存在，则返回  -1。
- * 
+ * 实现strStr()函数。
+ * 给定一个haystack 字符串和一个 needle 字符串，在 haystack 字符串中找出 needle 字符串出现的第一个位置 (从0开始)。如果不存在，则返回 -1。
+ *
  * 示例 1:
  * 输入: haystack = "hello", needle = "ll"
  * 输出: 2
@@ -15,8 +15,8 @@ import com.trustno1.appStart.base.topic;
  * 输出: -1
  *
  * 说明:
- * 当 needle 是空字符串时，我们应当返回什么值呢？这是一个在面试中很好的问题。
- * 对于本题而言，当 needle 是空字符串时我们应当返回 0 。这与C语言的 strstr() 以及 Java的 indexOf() 定义相符。
+ * 当needle是空字符串时，我们应当返回什么值呢？这是一个在面试中很好的问题。
+ * 对于本题而言，当needle是空字符串时我们应当返回 0 。这与C语言的strstr()以及 Java的indexOf()定义相符。
  */
 public class No0028 extends topic {
 
@@ -47,7 +47,7 @@ public class No0028 extends topic {
     System.out.println("haystack: " + haystack6 + ", needle: " + needle6 + ", output: " + strStr(haystack6, needle6));
     System.out.println("haystack: " + haystack7 + ", needle: " + needle7 + ", output: " + strStr(haystack7, needle7));
     System.out.println("haystack: " + haystack8 + ", needle: " + needle8 + ", output: " + strStr(haystack8, needle8));
-    System.out.println("======================="  + getClass().getName() + "===================================");
+    System.out.println("=======================" + getClass().getName() + "===================================");
   }
 
   /**

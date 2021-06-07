@@ -1,8 +1,7 @@
 package com.trustno1.easy.no001to100;
 
-import com.trustno1.appStart.base.topic;
-
 import java.util.Arrays;
+import com.trustno1.appStart.base.topic;
 
 /**
  * 编写一个函数来查找字符串数组中的最长公共前缀。如果不存在公共前缀，返回空字符串 ""。
@@ -34,7 +33,7 @@ public class No0014 extends topic {
     System.out.println("input : " + Arrays.toString(strings3) + " , output : " + longestCommonPrefix(strings3));
     System.out.println("input : " + Arrays.toString(strings4) + " , output : " + longestCommonPrefix(strings4));
     System.out.println("input : " + Arrays.toString(strings5) + " , output : " + longestCommonPrefix(strings5));
-    System.out.println("======================="  + getClass().getName() + "===================================");
+    System.out.println("=======================" + getClass().getName() + "===================================");
   }
 
   private String longestCommonPrefix(String[] strs) {

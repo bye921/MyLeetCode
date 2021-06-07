@@ -3,7 +3,7 @@ package com.trustno1.easy.no001to100;
 import com.trustno1.appStart.base.topic;
 
 /**
- * 将两个有序链表合并为一个新的有序链表并返回。新链表是通过拼接给定的两个链表的所有节点组成的。 
+ * 将两个有序链表合并为一个新的有序链表并返回。新链表是通过拼接给定的两个链表的所有节点组成的。
  *
  * 示例：
  * 输入：1->2->4, 1->3->4
@@ -34,7 +34,7 @@ public class No0021 extends topic {
     }
     System.out.print(l.val);
     System.out.println();
-    System.out.println("======================="  + getClass().getName() + "===================================");
+    System.out.println("=======================" + getClass().getName() + "===================================");
   }
 
   private ListNode mergeTwoLists(ListNode l1, ListNode l2) {
@@ -80,6 +80,7 @@ public class No0021 extends topic {
   private static class ListNode {
     int val;
     ListNode next;
+
     ListNode(int x) { val = x; }
   }
 }

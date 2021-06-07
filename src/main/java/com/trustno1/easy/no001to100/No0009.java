@@ -9,7 +9,7 @@ import com.trustno1.appStart.base.topic;
  * 输入: 121
  * 输出: true
  *
- * 示例 2:
+ * 示例2:
  * 输入: -121
  * 输出: false
  * 解释: 从左向右读, 为 -121 。 从右向左读, 为 121- 。因此它不是一个回文数。
@@ -36,7 +36,7 @@ public class No0009 extends topic {
     System.out.println("input : " + int4 + " , output : " + isPalindrome2(int4));
     System.out.println("input : " + int5 + " , output : " + isPalindrome2(int5));
     System.out.println("input : " + int6 + " , output : " + isPalindrome2(int6));
-    System.out.println("======================="  + getClass().getName() + "===================================");
+    System.out.println("=======================" + getClass().getName() + "===================================");
   }
 
   private boolean isPalindrome(int x) {

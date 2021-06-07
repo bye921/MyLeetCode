@@ -1,9 +1,8 @@
 package com.trustno1.normal.no001to100;
 
-import com.trustno1.appStart.base.topic;
-
 import java.util.Arrays;
 import java.util.List;
+import com.trustno1.appStart.base.topic;
 
 /**
  * 给出两个非空的链表用来表示两个非负的整数.其中,它们各自的位数是按照逆序的方式存储的,并且它们的每个节点只能存储一位数字.
@@ -22,8 +21,8 @@ public class No0002 extends topic {
     List<Integer> l1 = Arrays.asList(2, 4, 3);
     List<Integer> l2 = Arrays.asList(5, 6, 4);
 
-//    System.out.println(addTwoNumbers(l1, l2).toString());
-    System.out.println("======================="  + getClass().getName() + "===================================");
+    // System.out.println(addTwoNumbers(l1, l2).toString());
+    System.out.println("=======================" + getClass().getName() + "===================================");
   }
 
   private ListNode addTwoNumbers(ListNode l1, ListNode l2) {
@@ -34,6 +33,7 @@ public class No0002 extends topic {
   private static class ListNode {
     int val;
     ListNode next;
+
     ListNode(int x) { val = x; }
   }
 }

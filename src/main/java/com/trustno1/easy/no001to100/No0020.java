@@ -1,11 +1,10 @@
 package com.trustno1.easy.no001to100;
 
-import com.trustno1.appStart.base.topic;
-
 import java.util.HashMap;
 import java.util.LinkedList;
 import java.util.Map;
 import java.util.Stack;
+import com.trustno1.appStart.base.topic;
 
 /**
  * 给定一个只包括 '('，')'，'{'，'}'，'['，']' 的字符串，判断字符串是否有效。
@@ -18,19 +17,19 @@ import java.util.Stack;
  * 输入: "()"
  * 输出: true
  *
- * 示例 2:
+ * 示例2:
  * 输入: "()[]{}"
  * 输出: true
  *
- * 示例 3:
+ * 示例3:
  * 输入: "(]"
  * 输出: false
  *
- * 示例 4:
+ * 示例4:
  * 输入: "([)]"
  * 输出: false
  *
- * 示例 5:
+ * 示例5:
  * 输入: "{[]}"
  * 输出: true
  *
@@ -61,7 +60,7 @@ public class No0020 extends topic {
     System.out.println("input : " + strings8 + " , output : " + isValidStack(strings8));
     System.out.println("input : " + strings9 + " , output : " + isValidStack(strings9));
     System.out.println("input : " + strings10 + " , output : " + isValidStack(strings10));
-    System.out.println("======================="  + getClass().getName() + "===================================");
+    System.out.println("=======================" + getClass().getName() + "===================================");
   }
 
   private boolean isValid(String s) {

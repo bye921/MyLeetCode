@@ -8,6 +8,7 @@ import com.trustno1.appStart.base.topic;
  * 示例：
  * 输入: 123
  * 输出: 321
+ *
  * @author xzheng
  *
  */
@@ -25,16 +26,16 @@ public class No0007 extends topic {
     int int8 = -28;
     int int9 = 1534236469;
 
-    System.out.println("input : " + int1 + " , output : " + reverseInteger2(int1));
-    System.out.println("input : " + int2 + " , output : " + reverseInteger2(int2));
-    System.out.println("input : " + int3 + " , output : " + reverseInteger2(int3));
-    System.out.println("input : " + int4 + " , output : " + reverseInteger2(int4));
-    System.out.println("input : " + int5 + " , output : " + reverseInteger2(int5));
-    System.out.println("input : " + int6 + " , output : " + reverseInteger2(int6));
-    System.out.println("input : " + int7 + " , output : " + reverseInteger2(int7));
-    System.out.println("input : " + int8 + " , output : " + reverseInteger2(int8));
-    System.out.println("input : " + int9 + " , output : " + reverseInteger2(int9));
-    System.out.println("======================="  + getClass().getName() + "===================================");
+    System.out.println("input : " + int1 + " , output : " + reverseInteger3(int1));
+    System.out.println("input : " + int2 + " , output : " + reverseInteger3(int2));
+    System.out.println("input : " + int3 + " , output : " + reverseInteger3(int3));
+    System.out.println("input : " + int4 + " , output : " + reverseInteger3(int4));
+    System.out.println("input : " + int5 + " , output : " + reverseInteger3(int5));
+    System.out.println("input : " + int6 + " , output : " + reverseInteger3(int6));
+    System.out.println("input : " + int7 + " , output : " + reverseInteger3(int7));
+    System.out.println("input : " + int8 + " , output : " + reverseInteger3(int8));
+    System.out.println("input : " + int9 + " , output : " + reverseInteger3(int9));
+    System.out.println("=======================" + getClass().getName() + "===================================");
   }
 
   private int reverseInteger(int number) {
@@ -69,5 +70,14 @@ public class No0007 extends topic {
       rev = rev * 10 + pop;
     }
     return rev;
+  }
+
+  private int reverseInteger3(int x) {
+    long n = 0;
+    while (x != 0) {
+      n = n * 10 + x % 10;
+      x = x / 10;
+    }
+    return (int) n == n ? (int) n : 0;
   }
 }
